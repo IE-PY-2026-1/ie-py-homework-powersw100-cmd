@@ -37,7 +37,7 @@
     
 ### **📁 증빙 자료:**
   * [1차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
-pdf 깃허브 파일 제출하는 곳에 첨부했습니다.
+https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8C%EC%9D%B4%EC%8D%AC%201%EC%B0%A8%EA%B3%BC%EC%A0%9C%20pdf.pdf
 
 <br>
 
