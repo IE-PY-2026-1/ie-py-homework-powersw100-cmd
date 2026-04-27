@@ -7,7 +7,7 @@
 # 업데이트 내용: BMI 판정 로직 추가 및 리스트를 활용한 식단 데이터 관리
 
 print("=" * 50)
-print("   ★ Smart Fit & Diet Coach V2.0 ★")
+print("   Smart Fit & Diet Coach V2.0 ")
 print("=" * 50)
 
 # 1. 정보 입력 및 리스트 저장 
