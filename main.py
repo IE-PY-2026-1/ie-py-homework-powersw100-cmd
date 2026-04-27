@@ -28,10 +28,9 @@ else:
     status = "비만"
     advice = "전문적인 식단 관리와 유산소 운동을 권장합니다."
 
-# 4. 식단 기록 (리스트 활용)
+# 4. 식단 기록
 print("\n" + "-" * 20 + " 식단 기록 " + "-" * 20)
 food_list = []
-# 2차 수준에서는 반복문 없이 3개 정도 직접 입력받는 것으로 구성
 food_list.append(input("오늘 아침에 먹은 음식: "))
 food_list.append(input("오늘 점심에 먹은 음식: "))
 food_list.append(input("오늘 저녁에 먹은 음식: "))
