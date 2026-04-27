@@ -62,7 +62,7 @@ https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8
 해결: 파이썬 특유의 들여쓰기(Indentation) 규칙과 모든 조건문 끝에는 항상 :이 들어가야 한다는 규칙을 다시 확인하여 수정함.
      
 ### **📁 증빙 자료:**
-  * [2차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
+  * https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8C%EC%9D%B4%EC%8D%AC%202%EC%B0%A8%EA%B3%BC%EC%A0%9C%20ai%ED%98%91%EC%97%85.hwp
   * [2차과제_실행결과.jpg]
 <br>
 
