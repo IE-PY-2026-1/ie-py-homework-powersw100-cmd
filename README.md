@@ -91,7 +91,7 @@ https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8
 해결: 데이터의 보존 주기(Lifecycle)를 고려하여 리스트 선언부를 while 루프가 시작되기 전(프로그램 최상단)으로 이동시킴으로써, 프로그램이 종료되기 전까지 사용자가 입력한 식단이 끊임없이 누적(append)되도록 데이터 구조를 정상화함.    
 ### **📁 증빙 자료:**
   * [3차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
-  * [3차과제_실행결과.jpg]
+실행결과:https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8C%EC%9D%B4%EC%8D%AC%203%EC%B0%A8%EA%B3%BC%EC%A0%9C%20%EC%BD%94%EB%93%9D%EC%8B%A4%ED%96%89.hwp
 <br>
 
 ### 🟥 [4차 과제: V4.0] 모듈화 및 데이터 확장 (배열과 함수) - 🌟최종 완성 -- 향후 작성 예정
