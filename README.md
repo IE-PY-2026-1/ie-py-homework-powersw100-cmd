@@ -90,7 +90,7 @@ https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8
 원인: 식단을 저장하는 리스트 초기화 코드(daily_meals = [])를 while True 루프 내부나 특정 메뉴 분기 안에 잘못 위치시켜, 사용자가 메뉴를 반복해서 선택할 때마다 기존에 저장되어 있던 식단 데이터가 계속 빈 값으로 리셋됨.
 해결: 데이터의 보존 주기(Lifecycle)를 고려하여 리스트 선언부를 while 루프가 시작되기 전(프로그램 최상단)으로 이동시킴으로써, 프로그램이 종료되기 전까지 사용자가 입력한 식단이 끊임없이 누적(append)되도록 데이터 구조를 정상화함.    
 ### **📁 증빙 자료:**
-  * [3차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
+ai협업과정:https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8C%EC%9D%B4%EC%8D%AC%203%EC%B0%A8%EA%B3%BC%EC%A0%9C%20ai%ED%98%91%EC%97%85%EA%B3%BC%EC%A0%95.hwp
 실행결과:https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/%ED%8C%8C%EC%9D%B4%EC%8D%AC%203%EC%B0%A8%EA%B3%BC%EC%A0%9C%20%EC%BD%94%EB%93%9D%EC%8B%A4%ED%96%89.hwp
 <br>
 
