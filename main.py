@@ -46,12 +46,11 @@ def regist_info():
 def check_health():
     if is_registered == False:
         print("\n[알림] 먼저 1번 메뉴에서 신체 정보를 등록해 주세요.")
-        return # 함수 강제 종료해서 메뉴로 튕기기
+        return 
         
-    # [조건] 위에 만든 함수에 인자(몸무게, 키)를 전달해서 BMI 결과 받아옴
     bmi = cal_bmi_func(user_data[3], user_data[2])
     
-    # 다중 조건문으로 등급 나누기
+
     if bmi < 18.5:
         status = "저체중"
         advice = "충분한 영양 섭취와 근력 운동이 필요합니다."
@@ -71,7 +70,7 @@ def check_health():
     print("*" * 45)    
 
 
-# 3번 메뉴: 식단 추가 함수
+# 3번 기능
 def diet_add():
     print("\n" + "-" * 15 + " 식단 기록 (추가할 때마다 누적됩니다) " + "-" * 15)
     meal_name = input("기록할 음식 이름을 입력하세요: ")
@@ -105,30 +104,30 @@ def show_result():
     print(f"▶ 신체 정보: 키 {user_data[2]}cm | 현재 체중 {user_data[3]}kg | 목표 체중 {user_data[4]}kg")
     print(f"▶ 현재 BMI: {bmi:.2f} ({status})")
     
-    # 누적 계산용 변수들 0으로 먼저 초기화
+    #초기화
     sum_calories = 0
-    bad_food_count = 0  # 300칼로리 넘는 음식 개수 셀 변수
+    bad_food_count = 0
     
-    print("\n" + "-" * 10 + " 현재까지 누적된 식단 표 " + "-" * 10)
+    print("\n" + "-" * 10 + " 현재까지 누적되어 있는 식단 표 " + "-" * 10)
     print("  번호  |   음식명   |   칼로리   |   비고   ")
     print("-" * 46)
     
-    # [조건] for문과 range()를 써서 이중 리스트 순회하고 인덱싱 활용하기
+    
     for i in range(len(daily_meals)):
-        name = daily_meals[i][0]   # 이중 리스트 인덱싱으로 음식명 추출
-        calorie = daily_meals[i][1] # 이중 리스트 인덱싱으로 칼로리 추출
+        name = daily_meals[i][0]  
+        calorie = daily_meals[i][1]
         
-        # [조건] 반복문 내부에 if-elif-else 다중 조건문으로 데이터 필터링하기
+        
         if calorie >= 300:
-            comment = "고칼로리 ⚠️"
-            bad_food_count += 1 # [조건] += 연산자로 개수 누적
+            comment = "고칼로리 "
+            bad_food_count += 1 
         elif calorie >= 150:
             comment = "적정 칼로리"
         else:
-            comment = "저칼로리 🌱"
+            comment = "저칼로리 "
             
         print(f"   {i+1}   |  {name}  |  {calorie} kcal  | {comment}")
-        sum_calories += calorie # [조건] += 연산자로 총 칼로리 더하기
+        sum_calories += calorie 
         
     print("-" * 46)
     print(f"▶ 오늘 섭취한 총 칼로리: {sum_calories} kcal")
@@ -136,11 +135,11 @@ def show_result():
     print("*" * 53)
 
 
-# 5번 메뉴 선택 시 텍스트 파일로 저장하는 함수
+# 5번 기능
 def file_save_func():
-    # open이랑 with 구문 써서 메모장 파일(txt)로 저장하기
+    #최근 14주차에 배운 내용
     with open("diet_records.txt", "w", encoding="utf-8") as file:
-        file.write("=== 스마트 피트니스 데이터 백업 ===\n")
+        file.write("=== 스마트 피트니스 기록한 데이터 백업 ===\n")
         if is_registered:
             file.write(f"이름: {user_data[0]} | 키: {user_data[2]}cm | 몸무게: {user_data[3]}kg\n")
         file.write("-" * 40 + "\n")
@@ -151,9 +150,6 @@ def file_save_func():
     print("[파일 저장 완] 'diet_records.txt' 파일에 데이터가 정상 저장되었습니다.")
 
 
-# ==================================================
-# [조건] while True 무한 루프 메인 시스템 시작
-# ==================================================
 while True:
     print("\n" + "=" * 50)
     print("      Smart Fit & Diet Coach V4.0  ")
@@ -165,18 +161,17 @@ while True:
     print(" 5. 프로그램 종료 및 데이터 저장")
     print("=" * 50)
     
-    # [예외처리 2] 메뉴 고를 때 영어 유나 특수문자 쳤을 때 안 꺼지게 막음
+  
     try:
         user_choice = input("원하는 기능의 번호를 선택하세요: ")
         
         if user_choice == "1":
-            regist_info() # 1번 함수 호출
-            
+            regist_info() 
         elif user_choice == "2":
-            # [조건] 등록 안됐을 때 continue로 밑에 코드 스킵하고 다시 위로 올리기
+            
             if is_registered == False:
                 print("\n[알림] 신체 정보를 먼저 등록해야 분석할 수 있습니다!")
-                continue # 루프 처음으로 리턴
+                continue 
             check_health()
             
         elif user_choice == "3":
