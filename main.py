@@ -187,9 +187,9 @@ while True:
             show_result()
             
         elif user_choice == "5":
-            file_save_func() # 파일 저장하고 끝내기
+            file_save_func() 
             print("\n프로그램을 종료합니다. 오늘도 건강하고 스마트한 하루 되세요! 🐍")
-            # [조건] break 써서 무한 루프 안전하게 탈출하기
+           
             break
             
         else:
