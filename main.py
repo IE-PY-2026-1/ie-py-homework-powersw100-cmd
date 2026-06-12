@@ -9,25 +9,24 @@
 # 데이터 보존을 위해 while 루프 외부에 변수를 선언합니다.
 # 파일이름 : 개인 맞춤형 피트니스 및 식단 플래너
 # 작 성 자 : 60261939 민상우
-# 과제 내용: [4차 과제: V4.0] 모듈화 및 데이터 확장 (배열과 함수)
+# 과제 내용: 4차과제
 
-# [조건] 전역 변수들 선언 (데이터 보존용)
+
 user_data = []  
 daily_meals = []      
 is_registered = False
 
 
-# [조건] 매개변수와 return을 사용하는 BMI 계산 함수
+
 def cal_bmi_func(w, h):
-    # 키를 미터로 환산해서 공식 대입
+   
     height_meter = h / 100
     bmi_val = w / (height_meter ** 2)
-    return bmi_val # 계산된 BMI 값을 리턴
+    return bmi_val
 
 
-# 1번 메뉴: 정보 입력 함수
 def regist_info():
-    # [조건] global 키워드로 바깥에 있는 전역변수 수정 가능하게 만듦
+  
     global user_data, is_registered
     
     print("\n" + "-" * 15 + " 신체 정보 등록 및 수정 " + "-" * 15)
