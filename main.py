@@ -76,19 +76,19 @@ def diet_add():
     print("\n" + "-" * 15 + " 식단 기록 (추가할 때마다 누적됩니다) " + "-" * 15)
     meal_name = input("기록할 음식 이름을 입력하세요: ")
     
-    # [예외처리 1] 숫자가 아닌 글자 입력 시 오류 나서 꺼지는 거 방지
+    #4차 과제 관련 내용임
     try:
         kcal = int(input("해당 음식의 칼로리(kcal)를 입력하세요: "))
     except ValueError:
         print("[오류] 칼로리는 숫자만 넣어야 합니다! 0kcal로 임시 저장합니다.")
         kcal = 0
     
-    # [조건] 이중 리스트 구조가 되도록 [음식, 칼로리] 묶어서 append 실행
+   
     daily_meals.append([meal_name, kcal])
     print(f"[기록 완료] '{meal_name}({kcal}kcal)'이(가) 식단 리스트에 추가되었습니다.")
 
 
-# 4번 메뉴: 종합 리포트 및 이중 리스트 출력 함수
+# 4번 기능
 def show_result():
     if is_registered == False:
         print("\n[알림] 등록된 신체 정보가 없습니다. 1번 메뉴를 먼저 이용해 주세요.")
