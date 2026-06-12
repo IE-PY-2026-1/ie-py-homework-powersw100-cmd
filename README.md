@@ -113,5 +113,5 @@ ai협업과정:=https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/bl
      
 ### **📁 증빙 자료:**
   * [4차_AI협업캡처.pdf 첨부 완료 (https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/Notes_260612_223131.pdf)
-  * [4차과제_실행결과.jpg]
+  * [4차과제_실행결과.jpg]https://github.com/IE-PY-2026-1/ie-py-homework-powersw100-cmd/blob/main/Notes_260612_225836.pdf
 <br>
