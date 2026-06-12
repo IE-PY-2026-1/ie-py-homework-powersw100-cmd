@@ -24,7 +24,7 @@ def cal_bmi_func(w, h):
     bmi_val = w / (height_meter ** 2)
     return bmi_val
 
-
+#1번 기능
 def regist_info():
   
     global user_data, is_registered
@@ -36,13 +36,13 @@ def regist_info():
     weight = float(input("현재 몸무게(kg)를 입력하세요: "))
     target_weight = float(input("목표 몸무게(kg)를 입력하세요: "))
     
-    # 리스트에 묶어서 전역변수에 대입
+   
     user_data = [name, age, height, weight, target_weight]
     is_registered = True
     print(f"\n[성공] {name}님의 신체 정보가 등록/수정되었습니다.")
 
 
-# 2번 메뉴: BMI 분석 및 출력 함수
+#2번 기능
 def check_health():
     if is_registered == False:
         print("\n[알림] 먼저 1번 메뉴에서 신체 정보를 등록해 주세요.")
